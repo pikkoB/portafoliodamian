@@ -46,9 +46,7 @@
             <li class="nav-item">
               <a class="nav-link underline" href="#proyectos">Proyectos</a>
             </li>
-            <li class="nav-item ">
-              <a class="nav-link underline" href="#testimonios">Testimonios</a>
-            </li>
+          
             <li class="nav-item ">
               <a class="nav-link underline" href="#contacto">Contacto</a>
             </li>
@@ -253,20 +251,19 @@
               Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
             </div>
 
-            <form class="form" data-netlify="true">
-              <div class="mb-3">
-                <label for="nameUser" class="form-label">Ingresa tu nombre</label>
+            <form class="form" method="POST" data-netlify="true">
+                <label  for="nameUser" class="form-label mb-3">Ingresa tu nombre</label>
                 <input type="text" class="form-control" id="nameUser">
-              </div>
-              <div class="mb-3">
-                <label for="userEmail" class="form-label">Ingresa tu correo</label>
+              
+             
+                <label for="userEmail" class="form-label mb-3">Ingresa tu correo</label>
                 <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
-              </div>
-              <div class="form-floating">
+             
+              
                 <p>Escribeme...</p>
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <textarea class="form-control" placeholder="Escribe un comentario aqui" id="floatingTextarea"></textarea>
                 <label for="floatingTextarea"></label>
-              </div>
+            
               
               <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
