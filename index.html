@@ -251,18 +251,18 @@
               Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
             </div>
 
-            <form class="form" method="POST" data-netlify="true">
-                <label  for="nameUser" class="form-label mb-3">Ingresa tu nombre</label>
+            <form name="contact" method="POST" data-netlify="true" class="form" >
+                <label  name="nameUser" class="form-label mb-3">Ingresa tu nombre</label>
                 <input type="text" class="form-control" id="nameUser">
               
              
-                <label for="userEmail" class="form-label mb-3">Ingresa tu correo</label>
+                <label name="userEmail" class="form-label mb-3">Ingresa tu correo</label>
                 <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
              
               
                 <p>Escribeme...</p>
                 <textarea class="form-control" placeholder="Escribe un comentario aqui" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea"></label>
+                <label name="floatingTextarea"></label>
             
               
               <button type="submit" class="btn btn-primary">Enviar</button>
