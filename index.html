@@ -35,7 +35,7 @@
           </a>
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item">
-              <a class="nav-link underline" aria-current="page" href="#home">inicio</a>
+              <a class="nav-link underline" aria-current="page" href="#home">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link underline "  href="#sobre-mi">Sobre mí</a>
@@ -58,9 +58,9 @@
     <!-- Seccion Hero -->
     <section id="home" class="hero align-items-stretch hidden">
       <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-        <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/imagenes-desarrolladores/academlo 4.jpg" alt="Foto de Damian">
-        <h1>Hola, soy Damian Becerra</h1>
-        <h2>Desarrollador web full stack.</h2>
+        <img class="hero-imagen-desarrollador rounded-circle giro" src="imagenes/imagenes-desarrolladores/academlo_4-removebg-preview.png" alt="Foto de Damian">
+        <h1>Hola, soy <span class="spanTitulo">Damian Becerra.</span> </h1>
+        <h2>Desarrollador web <span class="spanSub">full stack.</span> </h2>
       </div>
       <div class="hero-inferior">
         <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
@@ -70,13 +70,14 @@
     <!-- Sobre mi -->
     <section id="sobre-mi" class="sobre-mi seccion-oscura hidden">
       <div class="contenedor">
-        <h2 class="seccion-titulo">Acerca de mí</h2>
+        <h2 class="seccion-titulo">Acerca de <span>mí</span> </h2>
         <p class="seccion-texto">Soy desarrollador web full stack con experiencia, apasionado en el desarrollo de  proyectos innovadores que sean un desafio al intelecto y al seguir aprendiendo. Cuento con un profundo entendimiento de las tecnologías de vanguardia, claves  para el desarrollo web de alta calidad. El tener experiencia docente y en actividades grupales me ayuda al trabajo en equipo brindando mis conocimientos  y tambien escuchando para generar soluciones optimas para el trabajo, por ello siempre estoy dispuesto a aprender y colaborar, para generar un espacio de dialogo, agil y ameno para todo el equipo.</p>
       </div>
     </section>
 
     <!-- Experiencia -->
     <section id="experiencia" class="experiencia seccion-clara hidden">
+      <h2 class="seccion-titulo">Mi<span> experiencia</span> </h2>
       <div class="container text-center">
         <div class="row">
           <!-- fundamentos -->
@@ -101,11 +102,11 @@
               <span class="badge text-bg-primary">Frameworks</span>
             </div>
           </div>
-          <!-- Estudiante -->
+          <!-- back -->
           <div class="columna col-12 col-md-4">
             <i class="bi bi-laptop"></i>
             <p class="experiencia-titulo">Desarrollo Back End</p>
-            <p>construir una aplicaciones desde el servidor con Node y Express. Usando una bases de datos relacionales(Postgres), autenticación de usuarios, seguridad ante ataques </p>
+            <p>Puedo construir aplicaciones desde el servidor con Node y Express. Usando una bases de datos relacionales(Postgres), autenticación de usuarios, seguridad ante ataques </p>
             <div class="badges-contenedor">
               <span class="badge text-bg-primary">Nodejs</span>
               <span class="badge text-bg-primary">Express</span>
@@ -118,7 +119,7 @@
 
     <!-- Proyectos -->
     <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column hidden">
-      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h2 class="seccion-titulo texto-negro">Mis proyectos <span>recientes</span> </h2>
       <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
       <!-- Galeria de Proyectos -->
       <div class="container text-center proyectos-contenedor">
@@ -251,18 +252,18 @@
               Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
             </div>
 
-            <form name="contact" method="POST" data-netlify="true" class="form" >
-                <label  name="nameUser" class="form-label mb-3">Ingresa tu nombre</label>
-                <input type="text" class="form-control" id="nameUser">
+            <form class="form" action="https://formsubmit.co/dambecerra@gmail.com" method="POST">
+                <label   for="nameUser"  name="name"class="form-label mb-3">Ingresa tu nombre</label>
+                <input name="name" type="text" class="form-control" id="nameUser">
               
              
-                <label name="userEmail" class="form-label mb-3">Ingresa tu correo</label>
-                <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+                <label for="userEmail" class="form-label mb-3">Ingresa tu correo</label>
+                <input type="email"  name="email"class="form-control" id="userEmail" aria-describedby="emailHelp">
              
               
                 <p>Escribeme...</p>
-                <textarea class="form-control" placeholder="Escribe un comentario aqui" id="floatingTextarea"></textarea>
-                <label name="floatingTextarea"></label>
+                <textarea class="form-control" name="coment" placeholder="Escribe un acomentario aqui" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea" name="coment"></label>
             
               
               <button type="submit" class="btn btn-primary">Enviar</button>
@@ -277,7 +278,7 @@
                   <i class="bi bi-envelope-check-fill"></i>
                 </button>
               </a>
-            </form> -->
+            </form> --> 
             <!-- <div class="col-12 col-md-4">
               <a href="mailto:dambecerra@micorreo.com">
                 <button type="button">  
